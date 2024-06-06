@@ -44,11 +44,15 @@ void main(List<String> args) async {
 
     await _buildAsciiArt(buffer);
 
-    print("Formato: ${ImageFormat(bytes).format}");
-    print("Dimensões: $height x $width px");
-    print("Total de pixels: ${height * width} px");
-    print("Total de bytes: ${bytes.length}");
-    print("Tamanho: $fileSize KB");
+    print("Format: ${ImageFormat(bytes).format}");
+    print("Dimensions: $height x $width px");
+    print("Total pixels: ${height * width} px");
+    print("Total bytes: ${bytes.length}");
+    print("File size: $fileSize KB");
+    return;
+  } else {
+    print("It wasn't possible to find file located at path: ${img.path}");
+    return;
   }
 }
 
