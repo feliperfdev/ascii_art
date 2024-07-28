@@ -13,5 +13,7 @@ class PixelAspects {
   int get grayscale => ((0.3 * red) + (0.59 * green) + (0.11 * blue)).round();
 
   int get charIndex => grayscale % asciiTable.length;
+  // int get charIndex =>
+  //     ((pixel / (pow(2, 8) - 1)) * (asciiTable.length - 1)).round();
   String get char => asciiTable[charIndex];
 }
