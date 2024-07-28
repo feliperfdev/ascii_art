@@ -5,7 +5,7 @@ import 'package:ascii_image/generated_ascii.dart';
 import 'package:ascii_image/pixel_aspects.dart';
 
 void main(List<String> args) async {
-  const defaultImage = 'C:/Dev/Estudos - DEV/ascii_image/bin/img3.jpg';
+  const defaultImage = './bin/img3.jpg';
 
   final img = File(args.isEmpty ? defaultImage : args.single);
 
